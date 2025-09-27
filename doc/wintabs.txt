@@ -1,24 +1,29 @@
 *wintabs.txt*                Per-window tabs for Vim
 
+Original author:  zefei
+Maintainer: LunarWatcher (Olivia)
+License: MIT
+URL: https://github.com/LunarWatcher/vim-wintabs
+    (bugs, feature requests, questions, and pull requests go here)
+
 ==============================================================================
 CONTENTS                                                             *wintabs*
 
-    1. Intro .......................................... |wintabs-intro|
-    2. Usage .......................................... |wintabs-usage|
-    3. Commands and mappings .......................... |wintabs-commands|
-    4. Options ........................................ |wintabs-options|
-    5. FAQ ............................................ |wintabs-faq|
+    INTRO ........................... |wintabs-intro|
+    USAGE ........................... |wintabs-usage|
+    COMMANDS AND MAPPINGS ........... |wintabs-commands|
+    OPTIONS ......................... |wintabs-options|
 
-==============================================================================
-INTRO                                                          *wintabs-intro*
+================================================================================
+INTRO                                                              *wintabs-intro*
 
 Wintabs is a per-window buffer manager for Vim. It creates "tabs" for each 
 buffer opened in every Vim window, and displays these tabs either on |tabline| 
 or |statusline|. It brings persistent contexts to Vim windows and tabs, making 
 them more awesome.
 
-==============================================================================
-USAGE                                                          *wintabs-usage*
+================================================================================
+USAGE                                                              *wintabs-usage*
 
 By default, wintabs maintains a list of tabs for each buffer opened in each 
 window, and displays them on tabline. To navigate and manage these tabs, a few 
@@ -60,8 +65,8 @@ to use tabline if you typically work without using split windows; otherwise,
 statusline is recommended. If Wintabs is set to use statusline, it 
 automatically moves your original statusline content to tabline.
 
-==============================================================================
-COMMANDS AND MAPPINGS                                       *wintabs-commands*
+================================================================================
+COMMANDS AND MAPPINGS                                           *wintabs-commands*
 
 These are wintab commands and their normal mode key mappings.
 
@@ -157,8 +162,8 @@ These are wintab commands and their normal mode key mappings.
 *<Plug>(wintabs_refresh)*
                 Refresh UI. This might be needed after configuration changes.
 
-==============================================================================
-OPTIONS                                                      *wintabs-options*
+================================================================================
+OPTIONS                                                          *wintabs-options*
 
 *g:wintabs_display*
 values: 'tabline', 'statusline', or 'none'
@@ -300,24 +305,5 @@ values: string of highlight group
 default: 'TabLineSel' or 'Normal', depending on |g:wintabs_display|
                 This sets the highlight group of the active wintab.
 
-==============================================================================
-FAQ                                                              *wintabs-faq*
 
-Q: Does wintabs support Powerline fonts?
-
-A: Yes. The vim-wintabs-powerline addon provides a set of renderers for using 
-Powerline fonts with wintabs.
-
-Q: Does wintabs support Vim sessions?
-
-A: Yes, as long as your |'sessionoptions'| contains "globals". Wintabs also 
-supports xolox/vim-session plugin out of the box.
-
-Q: Does wintabs work with statusline/tabline plugins like airline?
-
-A: Wintabs can work reasonably well with statusline/tabline plugins as long as 
-you load wintabs after other plugins.
-
-==============================================================================
-
-_\__/_  \_(-_- \) ...tabs...                                 vim:tw=78:ft=help
+vim:tw=80:ft=help
