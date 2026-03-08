@@ -5,6 +5,8 @@ buffer opened in every Vim window, and displays these buffers either on tabline
 or statusline. It brings persistent contexts to Vim windows and tabs, making 
 them more awesome.
 
+As of 2026-03-08, this plugin is no longer maintained. Due to [AI slop in vim](https://hachyderm.io/@AndrewRadev/116175986749599825), I have moved to emacs with evil mode.
+
 ## Fork notes
 
 This is a maintained fork of [zefei/vim-wintabs](https://github.com/zefei/vim-wintabs). Note that the plugin itself is currently considered feature-complete, so regular, major updates will not be happening. 
